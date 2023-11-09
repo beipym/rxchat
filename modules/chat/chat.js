@@ -1,16 +1,10 @@
 import { elementWrapper } from "../../framework/elementWrapper";
 import { createInput } from "../../framework/input";
 import chatBodyElement from "./chat-body";
-import chatInputBox  from "./chat-input";
+import chatInputBoxElement  from "./chat-input";
 
-const chatBodyItems = [
-    elementWrapper(
-        [ chatBodyElement, chatInputBox ], 
-        [ 'm-4' ]
-    )
-];
 
-const chatBoxClasses = [
+const chatComponentClasses = [
     'w-[1024px]',
     'h-[720px]',
     'bg-slate-200',
@@ -19,11 +13,17 @@ const chatBoxClasses = [
     'flex',
     'flex-col',
     'justify-between', 
-    'gap-[24px]'
-
+    'gap-[24px]',
+    'p-4'
 ];
 
-export const chatComponent = elementWrapper(
-    chatBodyItems,
-    chatBoxClasses
+
+const chatComponent = document.createElement('div');
+
+chatComponent.classList = chatComponentClasses.join(' ');
+
+[chatBodyElement , chatInputBoxElement].map(
+    item => chatComponent.appendChild(item)
 )
+
+export default chatComponent;

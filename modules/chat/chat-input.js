@@ -11,11 +11,11 @@ $sendBtn.classList = ['bg-green-200 text-gray-600'].join(' ')
 $sendBtn.innerHTML = 'Send';
 
 // wrapper element
-const chatInputBox = document.createElement('div');
-chatInputBox.classList =  ['flex', 'flex-row', 'gap-[16px]'].join(' ');
+const chatInputBoxElement = document.createElement('div');
+chatInputBoxElement.classList =  ['flex', 'flex-row', 'gap-[16px]'].join(' ');
 
 [$chatInput , $sendBtn].map(
-    item => { chatInputBox.appendChild(item)}
+    item => { chatInputBoxElement.appendChild(item)}
 )
 
-export default chatInputBox ;
+export default chatInputBoxElement ;
