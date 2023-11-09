@@ -1,5 +1,3 @@
-import { elementWrapper } from '../../framework/elementWrapper'
-import { createButton } from '../../framework/button'
 
 // chat text input
 const $chatInput =  document.createElement('input')
