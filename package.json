@@ -6,9 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "tailor":" npx tailwindcss -i ./style.css -o ./styles/tailwind-output.css --watch"
   },
   "devDependencies": {
+    "tailwindcss": "^3.3.5",
     "vite": "^4.4.5"
   }
 }
