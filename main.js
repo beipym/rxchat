@@ -1,5 +1,5 @@
 import './style.css'
-import { chatBody } from './modules/chat/chat.js'
+import { chatComponent } from './modules/chat/chat.js'
 
-document.querySelector('#app').appendChild(chatBody)
+document.querySelector('#app').appendChild(chatComponent)
 
