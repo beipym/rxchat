@@ -1,4 +1,4 @@
-import { inputMessage } from "./chat-service";
+import { inputMessage } from "./services/chat-service";
 
 export const sendMessageEvent = () => { alert('Testing this file') }
 

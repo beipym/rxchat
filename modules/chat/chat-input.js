@@ -4,6 +4,7 @@ import { sendButtonClickHandler } from "./chat-input-events";
 const $chatInput =  document.createElement('input')
 $chatInput.classList = ['text-black', 'bg-white' , 'mt-auto', 'p-4', 'rounded-[8px]', 'border', 'border-slate-200', 'w-full'].join(' ');
 $chatInput.setAttribute('id', 'chatInputField');
+// $chatInput.addEventListener('keyup', ()=>{console.log($chatInput.value)})
 
 // chat text button
 const $sendBtn = document.createElement('button');

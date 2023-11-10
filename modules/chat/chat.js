@@ -1,5 +1,3 @@
-import { elementWrapper } from "../../framework/elementWrapper";
-import { createInput } from "../../framework/input";
 import chatBodyElement from "./chat-body";
 import chatInputBoxElement  from "./chat-input";
 

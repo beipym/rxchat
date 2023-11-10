@@ -802,6 +802,14 @@ video {
   height: 100%;
 }
 
+.h-\[calc\(720-100\)\] {
+  height: calc(720 - 100);
+}
+
+.h-\[calc\(720px-100px\)\] {
+  height: calc(720px - 100px);
+}
+
 .w-\[1024px\] {
   width: 1024px;
 }
