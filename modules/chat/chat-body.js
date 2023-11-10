@@ -1,3 +1,5 @@
+import { inputMessage, messagesInViewList } from "./chat-service";
+
 const chatBodyElement = document.createElement('div')
 chatBodyElement.classList = ['w-full', 'h-full', 'rounded-[16px]', 'bg-white', 'flex', 'flex-col'].join(' ');
 
@@ -16,8 +18,24 @@ sampleMessage.classList = ['w-fit', 'm-4', 'ml-auto', 'p-4', 'text-white', 'bg-b
 sampleMessage2.classList = ['w-fit', 'm-4','mr-auto', 'p-4', 'text-black', 'bg-slate-200', 'rounded-t-xl', 'rounded-br-xl'].join(' ');
 messageDate.classList = ['w-full', 'text-xs','mr-auto', 'py-2', 'text-slate-400'].join(' ');
 
-chatBodyElement.appendChild(messageDate)
-chatBodyElement.appendChild(sampleMessage)
-chatBodyElement.appendChild(sampleMessage2)
+// chatBodyElement.appendChild(messageDate)
+// chatBodyElement.appendChild(sampleMessage)
+// chatBodyElement.appendChild(sampleMessage2)
+
+inputMessage.subscribe(
+    msgs => {
+        // msgs.map(
+            // msgItem => {                
+                const sampleMessage = document.createElement('div');
+                sampleMessage.innerHTML = msgs;
+                sampleMessage.classList = ['w-fit', 'm-4', 'ml-auto', 'p-4', 'text-white', 'bg-blue-400', 'rounded-t-xl', 'rounded-bl-xl'].join(' ');
+                chatBodyElement.appendChild(sampleMessage);
+
+
+            // }
+        // )
+    }
+)
+
 
 export default chatBodyElement;
