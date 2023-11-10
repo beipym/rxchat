@@ -5,7 +5,7 @@ $chatInput.classList = ['text-black', 'bg-white' , 'mt-auto', 'p-4', 'rounded-[8
 
 // chat text button
 const $sendBtn = document.createElement('button');
-$sendBtn.classList = ['bg-green-400', 'text-gray-600', 'shadow'].join(' ')
+$sendBtn.classList = ['bg-green-400', 'text-white', 'shadow', 'hover:bg-green-500'].join(' ')
 $sendBtn.innerHTML = 'Send';
 
 // wrapper element
